@@ -1,0 +1,6 @@
+#!/bin/bash
+
+DIR=$(dirname $(readlink -e $0))
+PY=$(which python)
+
+exec $PY $DIR/src/srvr.py $@
