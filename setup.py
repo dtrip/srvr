@@ -15,7 +15,8 @@ setup(
     install_requires = [
         "cement==2.4.0",
         "colorama==0.3.3",
-        "pycrypto==2.6.1"
+        "pycrypto==2.6.1",
+        "configparser2==4.0.0"
         ],
 
     author = "Dtripp",

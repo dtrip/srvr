@@ -1,21 +1,19 @@
 
-import Srvr
+from cement.core import controller
+# import Srvr
 import Authenticate as auth
 
-class Client(CementApp):
+class Client(controller.CementBaseController):
     class Meta:
         label = 'client'
-        stacked_on = 'base'
+        stacked_on = 'SrvrBase'
 
     @expose(hide=True)
     def init(self):
 
-        self.connect();
+        # self.connect();
+        pass
 
-
-        return False
-
-    @expose(hide=True)
+    @expose(hide=False)
     def connect(self):
-    
-        return False
+        self.app.log.info("Logging info about app")

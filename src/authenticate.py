@@ -1,17 +1,14 @@
 
-import Srvr
+# import Srvr
 import os
+from cement.core import controller
 from Crypto.PublicKey import RSA
 from Crypto import Random
 
-class Authenticate(CementBaseController):
+class Authenticate(controller.CementBaseController):
     class Meta:
         label = 'authenticate'
-        stacked_on = 'base'
+        # stacked_on = 'Base'
 
-    class sshKey(self):
-
-
-
-
-        return False;
+    def sshKey(self):
+        pass
